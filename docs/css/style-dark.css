@@ -3061,3 +3061,14 @@ blockquote:before,
 		top: 110%;
 	}
 }
+
+.m_logo {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    display: inline-block;
+    width: 50px;
+    white-space: nowrap;
+    padding: 10px 0;
+}
