@@ -1325,7 +1325,11 @@ blockquote:before,
 	display: inline-block;
 	color: #fff;
 }
-
+@media(max-width:575px){
+	.pt-testimonial .testimonial-item .media{flex-wrap: wrap;justify-content: center;}
+	.pt-testimonial .testimonial-item .content{width:100%; text-align: center;}
+	.pt-testimonial .testimonial-item .content p{width:100%;}
+}
 /* Price */
 .pt-about .price {
 	text-align: center;
