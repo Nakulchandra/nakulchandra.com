@@ -1309,6 +1309,8 @@ blockquote:before,
     font-size: 13px;
     font-weight: 400;
 	padding-top: 10px;
+	width: 300px;
+	max-width:100%;
 }
 
 .pt-testimonial .testimonial-item .rating {
