@@ -1298,6 +1298,8 @@ blockquote:before,
 	margin-right: 20px;
 	-webkit-border-radius: 50%;
 			border-radius: 50%;
+	height: 80px;
+    object-fit: cover;
 }
 
 .pt-testimonial .testimonial-item .content {
