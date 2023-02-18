@@ -1329,6 +1329,7 @@ blockquote:before,
 	.pt-testimonial .testimonial-item .media{flex-wrap: wrap;justify-content: center;}
 	.pt-testimonial .testimonial-item .content{width:100%; text-align: center;}
 	.pt-testimonial .testimonial-item .content p{width:100%;}
+	.pt-testimonial .testimonial-item .rating {position: static;}
 }
 /* Price */
 .pt-about .price {
