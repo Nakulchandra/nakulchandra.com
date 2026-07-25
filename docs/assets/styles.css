@@ -6,16 +6,17 @@
 :root {
   --ink: #0D2129;
   --accent: #33BDF0;
-  --teal: #489FB0;
+  --accent-text: #0076A1;
+  --teal: #297485;
   --line: #DFE9ED;
   --tint: #F2FAFD;
   --white: #FFFFFF;
 
-  --ink-62: rgba(13, 33, 41, .62);
-  --ink-60: rgba(13, 33, 41, .60);
-  --ink-55: rgba(13, 33, 41, .55);
-  --ink-50: rgba(13, 33, 41, .50);
-  --ink-65: rgba(13, 33, 41, .65);
+  --ink-62: rgba(13, 33, 41, .72);
+  --ink-60: rgba(13, 33, 41, .70);
+  --ink-55: rgba(13, 33, 41, .68);
+  --ink-50: rgba(13, 33, 41, .65);
+  --ink-65: rgba(13, 33, 41, .75);
 
   --shell: 1280px;
   --pad-x: 48px;
@@ -69,7 +70,7 @@ a {
 }
 
 a:hover {
-  color: var(--accent);
+  color: var(--accent-text);
 }
 
 :focus-visible {
@@ -95,7 +96,7 @@ a:hover {
 }
 
 .accent {
-  color: var(--accent);
+  color: var(--accent-text);
 }
 
 main {
@@ -162,7 +163,7 @@ main {
 
 .btn--outline:hover {
   border-color: var(--accent);
-  color: var(--accent);
+  color: var(--accent-text);
 }
 
 .btn--ghost {
@@ -175,7 +176,7 @@ main {
 
 .btn--ghost:hover {
   border-color: var(--accent);
-  color: var(--accent);
+  color: var(--accent-text);
 }
 
 .btn--pill {
@@ -195,7 +196,7 @@ main {
 }
 
 .inline-link:hover {
-  color: var(--accent);
+  color: var(--accent-text);
 }
 
 .underline-link {
@@ -368,7 +369,7 @@ main {
   font-weight: 900;
   font-size: 32px;
   letter-spacing: -.02em;
-  color: var(--accent);
+  color: var(--accent-text);
 }
 
 .stat__label {
@@ -492,7 +493,7 @@ main {
 .card__icon {
   display: block;
   margin-bottom: 16px;
-  color: var(--accent);
+  color: var(--accent-text);
 }
 
 .card__title {
@@ -602,7 +603,7 @@ a.row__logo:hover img {
 }
 
 .row__title a:hover {
-  color: var(--accent);
+  color: var(--accent-text);
 }
 
 .tag-role {
@@ -610,7 +611,7 @@ a.row__logo:hover img {
   font-weight: 700;
   letter-spacing: .14em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: var(--accent-text);
 }
 
 .row__text {
@@ -667,7 +668,7 @@ a.row__logo:hover img {
 .slide__mark {
   font-size: 64px;
   font-weight: 900;
-  color: var(--accent);
+  color: var(--accent-text);
   line-height: 1;
   margin-bottom: 20px;
 }
@@ -738,6 +739,17 @@ a.row__logo:hover img {
   cursor: pointer;
   padding: 0;
   transition: background .3s, width .3s;
+  position: relative;
+}
+
+.carousel__dot::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 48px;
+  height: 48px;
 }
 
 .carousel__dot:hover {
